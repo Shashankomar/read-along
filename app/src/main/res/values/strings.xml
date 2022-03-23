@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">ReadAlong</string>
+
+
+
+
+
+    <string name="my_visits">My Submissions</string>
+    <string name="hindi">हिंदी</string>
+    <string name="please_select_forms">Choose Forms</string>
+    <string name="filter_cross_content_desc">cross</string>
+    <string name="submit_saved_forms">सहेजे गए फ़ॉर्म सबमिट करें</string>
+    <string name="form_download_error">सर्वर से प्रपत्रों को डाउनलोड करने में त्रुटि हुई है। URL मान्य है या नहीं और कृपया ODK कॉन्फ़िगरेशन ठीक है या नहीं इसकी जाँच करें।</string>
+    <string name="form_download_error_no_internet_connection">कृपया अपना इंटरनेट कनेक्शन जांचें। फ़ॉर्म डाउनलोड नहीं कर सके।</string>
+    <string name="form_list_download_error">फ़ॉर्म डाउनलोड करने में त्रुटि हुई है।</string>
+    <string name="couldnt_complete_assessment">बोलो ऐप से मूल्यांकन परिणाम प्राप्त करने में त्रुटि हुई थी।</string>
+    <string name="shiksha_mitr_details">प्रेरणा लक्ष्य</string>
+    <string name="couldnt_complete_assessment1">ऐसे प्रतीत होता है कि आपके फ़ोन में Read Along ऐप डाउनलोड नहीं हुई है, आकलन के लिए प्ले स्टोर से Read Along ऐप इनस्टॉल करें।</string>
+    <string name="unexpected_error_occured">एक अप्रत्याशित त्रुटि आई और ऐप को रोक दिया गया। एप्लिकेशन को पुनः आरंभ करने के लिए कृपया नीचे दिए गए बटन पर क्लिक करें।</string>
+    <string name="oh_no">ओह हो!</string>
+    <string name="proceed">ओह हो!</string>
+    <string name="let_s_start_again">फिर से शुरू करें</string>
+    <string name="screen_congrats">" आपने आज का प्रैक्टिस पूरा कर लिया हैं!\nहर दिन प्रैक्टिस करते रहो !"</string>
+    <string name="register_hrms_message">अपनी मानव सम्पदा ID पंजीकृत करें</string>
+    <string name="assessment_home_screen">Assessment Home Screen</string>
+    <string name="setup_new_assessment" >Setup new assessment</string>
+    <string name="mentor_profile">Mentor Profile</string>
+    <string name="your_assessment_overview">Assessment Overview</string>
+    <string name="grade_wise_students">Grade wise # students</string>
+    <string name="knowledge_section">Knowledge section</string>
+    <string name="baseline_assessment">Baseline Assessment</string>
+    <string name="name">Name : \u0020\u0020%s</string>
+    <string name="designation">Designation : \u0020\u0020%s</string>
+    <string name="district">District : \u0020\u0020%s</string>
+    <string name="block">Block : \u0020\u0020%s</string>
+    <string name="cancel">Cancel</string>
+    <string name="do_you_want_to_logout_">Do you want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="logout">Logout</string>
+    <string name="coming_soon">Coming soon!</string>
+    <string name="start_practice_session">Start practice session</string>
+    <string name="not_now">Not now</string>
+    <string name="are_you_sure">Are you sure you want to log out?</string>
+    <string name="sure">Yes</string>
+    <string name="help">Help</string>
+    <string name="profile">Profile</string>
+    <string name="verify_pin">Verify pin</string>
+
+    //new strings
+    <string name="search_by_udice_code">Search by UDISE code</string>
+    <string name="rural">Rural</string>
+    <string name="urban">Urban</string>
+    <string name="select_school_to_start_visit">Select school to start visit</string>
+    <string name="remove_schools_already_visited">Remove schools already visited :</string>
+</resources>

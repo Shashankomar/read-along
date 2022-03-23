@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="filter_close_button_margin_left">15dp</dimen>
+    <dimen name="home_title_box_padding">3dp</dimen>
+    <dimen name="padding_vertical_home">6dp</dimen>
+    <dimen name="padding_horizontal_home">16dp</dimen>
+    <dimen name="width_0dp">0dp</dimen>
+    <dimen name="card_elevation_3dp">3dp</dimen>
+    <dimen name="elevation_4dp">4dp</dimen>
+    <dimen name="dimen_20dp">20dp</dimen>
+    <dimen name="margin_top_home_boxes">20dp</dimen>
+    <dimen name="margin_bottom_home_boxes">10dp</dimen>
+    <dimen name="text_size_home_count">30sp</dimen>
+    <dimen name="padding_home_box">10dp</dimen>
+    <dimen name="margin_26_dp">26dp</dimen>
+
+</resources>

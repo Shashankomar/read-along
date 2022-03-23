@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            style="@style/scrollbar_shape_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/instruction_scroller"
+            android:fillViewport="true"
+            android:visibility="visible"
+            android:scrollbarSize="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.SamagraRoundImageView
+                    android:id="@+id/subject_instruction_layout_profile_media"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="24dp"
+                    android:src="@drawable/ic_mpc_media"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="2dp"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/subject_instruction_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:gravity="center"
+                    android:text="चलिए शुरू करते हैं !"
+                    android:textColor="#FC8C45"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/subject_instruction_text" />
+
+                <TextView
+                    android:id="@+id/subject_instruction_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="4dp"
+                    android:gravity="center"
+                    android:text="आपको अभी कुछ शब्द अथवा कहानियां दिखेंगी, उनको पढ़ने की कोशिश करें?"
+                    android:textColor="@color/blue"
+                    android:textSize="17sp"
+                    android:layout_marginBottom="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/subject_instruction_icon" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="96dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="18dp"
+                    android:scaleType="fitXY"
+                    android:id="@+id/subject_instruction_icon"
+                    android:src="@drawable/ic_mpc_subject_instruction"
+                    app:layout_constraintTop_toBottomOf="@id/subject_instruction_text" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/subject_instruction_icon"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="54dp"
+                        android:background="@color/color2"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:paddingStart="19dp"
+                        android:paddingEnd="19dp"
+                        android:id="@+id/instruction_go_to_home"
+                        android:text="पीछे जाएं "
+                        android:layout_marginEnd="4dp"
+                        android:textColor="@color/blue"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="54dp"
+                        android:background="@drawable/ic_next_custom"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:paddingStart="19dp"
+                        android:paddingEnd="19dp"
+                        android:text="आगे बढ़ें"
+                        android:layout_marginStart="4dp"
+                        android:id="@+id/subject_instruction_student_go_to_subject"
+                        app:layout_constraintTop_toBottomOf="@id/subject_instruction_icon"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:textColor="@color/blue"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center_horizontal"
+            android:textSize="43sp"
+            android:id="@+id/textloader1"
+            android:textColor="@color/blue"
+            android:singleLine="false"
+            android:visibility="gone"
+            android:text="1%"
+            app:layout_constraintBottom_toTopOf="@id/progressbarPredict"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:id="@+id/progressbarPredict"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="65dp"
+            android:visibility="gone"
+
+            style="@style/Widget.AppCompat.ProgressBar" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center_horizontal"
+            android:textSize="15sp"
+            android:id="@+id/textloader"
+            android:visibility="gone"
+
+            android:textColor="@color/blue"
+            android:singleLine="false"
+            android:text="आकलन प्रश्न पत्र अभी लोड हो रहे हैं, कृपया प्रतीक्षा करें"
+            app:layout_constraintTop_toBottomOf="@id/progressbarPredict"
+            android:layout_height="wrap_content" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

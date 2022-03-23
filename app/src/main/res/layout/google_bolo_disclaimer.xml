@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/filter_header"
+        android:layout_width="match_parent"
+        android:layout_height="54dp">
+
+        <ImageView
+            android:id="@+id/close_cross_bolo_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/filter_close_button_margin_left"
+            android:contentDescription="@string/filter_cross_content_desc"
+            android:padding="10dp"
+            android:scaleType="center"
+            android:src="@drawable/cross_icon" />
+
+        <TextView
+            android:id="@+id/bolo_filters_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:letterSpacing="0.052"
+            android:text="भाषा का आकलन सम्बंधित निर्देश"
+            android:textColor="@color/blue"
+            android:textSize="16.5sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/filter_title_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/filter_header"
+        android:background="@color/blue" />
+
+
+    <ScrollView
+        style="@style/scrollbar_shape_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ss"
+        android:layout_below="@id/filter_title_divider"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:scrollbarSize="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lakshaya_title"
+                style="@style/LabelStyle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:gravity="center"
+                android:text="कृपया ध्यान दें!!"
+                android:textColor="@color/blue"
+                android:textSize="25sp" />
+
+            <RelativeLayout
+                android:id="@+id/disclaimer_image_layout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/lakshaya_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/reading_student"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/reading_student"
+                    android:visibility="gone"
+                    app:tint="#FC8C45" />
+
+                <ImageView
+                    android:id="@+id/bolo_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/lakshaya_title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/disclaimer_image_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="6dp"
+                android:gravity="center"
+                android:letterSpacing="0.09"
+                android:lineSpacingMultiplier="1.5"
+                android:text="भाषा के आकलन के लिए 'Read Along' का इस्तेमाल किया जाएगा। \nआकलन शुरू करने से पहले सुनिश्चित करें:"
+                android:textColor="@color/color2"
+                android:textSize="14.5sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lakshaya_title11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lakshaya_title1"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/button_white_background_orange"
+                android:gravity="start"
+                android:letterSpacing="0.09"
+                android:lineSpacingMultiplier="1.5"
+                android:padding="6dp"
+                android:text="1) Google PlayStore से 'Read Along' ऐप डाउनलोड करें।'Read Along' ऐप को खोलकर, ऐप 'Audio' और 'Video' permissions मांगने पर 'Allow' करें\n
+2) 'Read Along' ऐप खुलने पर यदि 'Audio' और 'Video' permissions मांगे तो 'Allow' पर क्लिक करें।\n
+3) 'Read Along' ऐप की भाषा को अंग्रेजी से हिंदी में बदलें। ('Read Along' के पहले पेज पर बाईं ओर बटन दबाने पर यह विकल्प मिलेगा)\n
+4) 'Read Along' ऐप पर आपने 'upprerna' पार्टनर कोड डालें। ('Read Along' के पहले पेज पर बाईं ओर बटन दबाने पर यह विकल्प मिलेगा)"
+                android:textColor="@color/blue"
+                android:textSize="13.5sp"
+                android:textStyle="normal" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <android.widget.Button
+            android:id="@+id/go_back_home_summary_bolo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_border_unfilled"
+            android:drawableStart="@drawable/ic_back_curved_arrow_svgrepo_com"
+            android:padding="8dp"
+            android:text="कक्षा या विषय को बदलें"
+            android:textColor="@color/blue"
+            android:textSize="13.5sp" />
+
+
+        <android.widget.Button
+            android:id="@+id/proceed_to_assessment_playstore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_border"
+            android:drawableStart="@drawable/ic_play_button_svgrepo_com__1_"
+            android:padding="8dp"
+            android:text="आकलन शुरू करें"
+            android:textColor="@color/white"
+            android:textSize="13.5sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>
